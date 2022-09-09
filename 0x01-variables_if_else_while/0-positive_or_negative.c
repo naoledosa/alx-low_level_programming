@@ -7,14 +7,12 @@
 
 
 /**
+ * main - Entry point
  *
- * main - Prints a random number and states whether
+ * Description - Prints a random number and states whether
+ *               it is positive, negative, or zero.
  *
- *        it is positive, negative, or zero.
- *
- *
- * Return: Always zero
- *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -36,7 +34,6 @@ int main(void)
 		printf("%d is negative\n", n);
 
 	else
-
 		printf("%d is zero\n", n);
 
 
