@@ -1,10 +1,10 @@
-/*
+/**
  *
- *  * File: 0-positive_or_negative.c
+ * File: 0-positive_or_negative.c
  *
- *   * Auth: Brennan D Baraban
+ * Auth: Brennan D Baraban
  *
- *    */
+ */
 
 
 
@@ -18,15 +18,14 @@
 
 /**
  *
- *  * main - Prints a random number and states whether
+ * main - Prints a random number and states whether
  *
- *   *        it is positive, negative, or zero.
+ *        it is positive, negative, or zero.
  *
- *    *
  *
- *     * Return: Always 0.
+ * Return: Always 0.
  *
- *     */
+ */
 
 int main(void)
 
