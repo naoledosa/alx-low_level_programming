@@ -5,6 +5,18 @@
 
 #include <time.h>
 
+/*
+ *	This program generates random number
+ *
+ *	and assigns the number to n
+ *
+ *	based on the value of n
+ *
+ *	decides whether it is positive, negative or zero
+ *
+ *	and prints message accordingly
+ *
+ */
 int main(void)
 {
 	int n;
