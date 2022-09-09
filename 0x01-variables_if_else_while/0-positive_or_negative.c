@@ -1,13 +1,3 @@
-/**
- *
- * File: 0-positive_or_negative.c
- *
- * Auth: Naol Edosa
- *
- */
-
-
-
 #include <stdlib.h>
 
 #include <time.h>
@@ -48,7 +38,6 @@ int main(void)
 	else
 
 		printf("%d is zero\n", n);
-
 
 
 	return (0);
