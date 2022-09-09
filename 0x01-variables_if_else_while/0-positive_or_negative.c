@@ -2,7 +2,7 @@
  *
  * File: 0-positive_or_negative.c
  *
- * Auth: Brennan D Baraban
+ * Auth: Naol Edosa
  *
  */
 
@@ -32,7 +32,6 @@ int main(void)
 {
 
 	int n;
-
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
