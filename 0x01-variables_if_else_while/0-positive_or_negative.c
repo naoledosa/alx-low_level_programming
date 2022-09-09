@@ -1,12 +1,12 @@
-/* headers - predifned libraries */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- *This program generates random number and assigns the number to n
- *based on the value of n
- *decides whether it is positive, negative or zero
- *and prints message accordingly
+ *function_name - main function
+ *Description - The function generates random number
+ *assigns its value to variable n, based on the value 
+ *of n, the function returns positive, negative or zero 
+ *
  */
 int main(void)
 {
@@ -15,15 +15,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive ", n);
+		printf("%d is positive",n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero ", n);
+		printf("%d is zero",n);
 	}
-	else 
+	else
 	{
-		printf("%d is negative ", n);
+		printf("%d is negative",n);
 	}
 	return (0);
 }
