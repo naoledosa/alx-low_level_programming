@@ -6,12 +6,14 @@
  *Description - The function generates random number
  *assigns its value to variable n, based on the value
  *of n, the function returns positive, negative or zero
+ *
+ *returns success at the end
  */
 int main(void)
 {
 	int n;	
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	srand(time(0));		
+	n = rand() - RAND_MAX / 2;	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
