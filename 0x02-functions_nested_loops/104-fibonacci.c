@@ -48,7 +48,6 @@ int main(void)
 		num_12 = num_22;
 		num_21 = num_1;
 		num_22 = num_2;
-
 	}
 	printf("\n");
 	return (0);
