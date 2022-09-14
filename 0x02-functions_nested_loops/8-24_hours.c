@@ -16,13 +16,13 @@ void jack_bauer(void)
 		for (min = 0; min <= 59; min++)
 		{
 			if (day < 10 && min < 10)
-				_putchar('0' + day + ':' + '0' + min);
+				printf("0%d:0%d", day, min);
 			else if (day < 10 && min > 10)
-				_putchar('0' + day + ':' + min);
+				printf("0%d:%d", day, min);
 			else if (day > 10 && min < 10)
-				_putchar(day + ':' + '0' + min);
+				printf("%d:0%d", day, min);
 			else
-				_putchar(day + ':' + min);
+				printf("%d:%d", day, min);
 			_putchar('\n');
 		}
 		_putchar('\n');
