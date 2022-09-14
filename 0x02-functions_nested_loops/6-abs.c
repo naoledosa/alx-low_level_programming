@@ -3,13 +3,12 @@
 
 /**
  * _abs -  computes the absolute value of an integer
- * 
+ * @val: number being tested 
  * Return: always 0.
  */
 
-int _abs(int)
+int _abs(int val)
 {
-	int val;
 
 	if (val >= 0)
 		printf("%d", val);
