@@ -1,13 +1,5 @@
-#include <unistd.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
-/**
- * main - _putchar writes a character to stdout
- *
- * Return: 0 success
- *         1 error
- */
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
