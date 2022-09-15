@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-void positive_or_negative(int i);
 
+void positive_or_negative(int);
 
 
 #endif /* MAIN_H */
