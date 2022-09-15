@@ -3,7 +3,6 @@
 /**
  * print_triangle - prints a triangle, followed by a new line
  * @size: size of traiangle
- * Return: always 0.
  */
 
  void print_triangle(int size)
@@ -34,4 +33,3 @@
 	_putchar('\n');
 
 }
-
