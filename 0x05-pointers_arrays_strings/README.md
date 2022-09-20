@@ -6,5 +6,6 @@ print_rev - a function that prints a string, in reverse, followed by a new line.
 rev_string - a function that reverses a string.
 puts2 - prints every other character of a string, starting with the first character
 
+puts_half - prints half of a string
 
 
