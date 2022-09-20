@@ -7,5 +7,6 @@ rev_string - a function that reverses a string.
 puts2 - prints every other character of a string, starting with the first character
 
 puts_half - prints half of a string
+print_array - prints n elements of an array of integers, followed by a new line.
 
 
