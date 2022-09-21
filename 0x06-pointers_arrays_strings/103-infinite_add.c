@@ -28,6 +28,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	 *(r + size_r) = '\0';
 
-	 return (add_strings(n1, n2, r, --size_r));
+	 return (infinite_add(n1, n2, r, --size_r));
 
 }
