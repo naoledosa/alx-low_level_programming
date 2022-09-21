@@ -2,24 +2,35 @@
 
 /**
  * cap_string - capitalizes all words of a string.
- * @s: string
+ * @a: string
  * Return: always 0.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *a)
 {
 	int i = 0;
 
-	while (s[i])
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		while (!(s[i] >= 'a' && s[i] <= 'z'))
-			i++;
+		if (a[i] >= 97 && a[i] <= 122)
+		{
+			if (i == 0)
+				a[i] -= 32;
 
-		if (str[index - 1] == ' ' || str[index - 1] == '\t' || str[index - 1] == '\n' || str[index - 1] == ',' || str[index - 1] == ';' || str[index - 1] == '.' || str[index - 1] == '!' || str[index - 1] == '?' || str[index - 1] == '"' || str[index - 1] == '(' || str[index - 1] == ')' || str[index - 1] == '{' || str[index - 1] == '}' || i == 0)
-			s[i] -= 32;
-		i++;
+			if (a[i - 1] == 9 || a[i - 1] == 10 ||
+			    a[i - 1] == 32 || a[i - 1] == 33)
+				a[i] -= 32;
+
+			if (a[i - 1] == 40 || a[i - 1] == 41 ||
+			    a[i - 1] == 44 || a[i - 1] == 46)
+				a[i] -= 32;
+
+			if (a[i - 1] == 59 || a[i - 1] == 123 ||
+			    a[i - 1] == 125)
+				a[i] -= 32;
+		}
 	}
 
-	return (s);
+	return (a);
 }
 
