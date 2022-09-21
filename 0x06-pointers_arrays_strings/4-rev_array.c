@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reverses the content of an array of integers
+ * reverse_array - reverses the content of an array of integers
  * @a: array of intergers
  * @n: the number of elements to swap
  */
