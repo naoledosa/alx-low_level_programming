@@ -2,7 +2,7 @@
 
 int length(char *str);
 void iterate_wild(char **wildstr);
-char *match(char *str, char *postfix);
+char *match(char *str, char *k);
 int wildcmp(char *s1, char *s2);
 
  /**
