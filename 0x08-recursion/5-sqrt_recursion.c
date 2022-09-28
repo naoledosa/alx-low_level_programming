@@ -6,6 +6,18 @@
  * Return: square of n
  */
 
+int _sqrt_recursion(int n)
+{
+	return (square_root(n, 1));
+}
+
+/**
+ * square_root - prints square root
+ * @i: numbers
+ * @j: numbers
+ * Return: square root
+ */
+
 int square_root(int i, j)
 {
 	int square = j * j;
@@ -18,10 +30,5 @@ int square_root(int i, j)
 
 	return (square_root(i, j + 1));
 
-}
-
-int _sqrt_recursion(int n)
-{
-	return (square_root(n, 1));
 }
 
