@@ -10,7 +10,7 @@ int check(char *s);
 
 int length(char *s)
 {
-	if (*s == '0')
+	if (*s == '\0')
 		return (0);
 
 	s++;
