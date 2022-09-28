@@ -48,7 +48,7 @@ void iterate_wild(char **wildstr)
  * Return: index
  */
 
-char *match(char *str, char *postfix)
+char *match(char *str, char *k)
 {
 	int i = length(str) - 1;
 	int j = length(k) - 1;
