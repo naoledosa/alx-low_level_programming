@@ -5,7 +5,7 @@ void iterate_wild(char **wildstr);
 char *match(char *str, char *k);
 int wildcmp(char *s1, char *s2);
 
- /**
+/**
  * length - Returns the length of a string, ignores wild chars
  * @str: string to be tested
  * Return: length
