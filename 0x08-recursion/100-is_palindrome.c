@@ -33,7 +33,9 @@ int check(char *s)
 		i--;
 	}
 	else
+	{
 		return (0);
+	}
 
 	return (1);
 }
