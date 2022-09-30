@@ -18,11 +18,12 @@ int main(int argc, char *argv[])
 			product *= argv[i];
 		}
 
-		printf("Product = %d\n", product);
+		printf("%d\n", product);
 	}
 	else
 	{
-		printf("Should have atleast two arguments\n");
+		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
