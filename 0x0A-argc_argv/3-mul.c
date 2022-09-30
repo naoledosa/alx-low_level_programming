@@ -9,22 +9,20 @@
 
 int main(int argc, char *argv[])
 {
-	int i, product;
+	int num1, num2, product;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			product *= argv[i];
-		}
-
-		printf("%d\n", product);
-	}
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+
+	product = num1 * num2;
+	
+	printf("%d\n", product);
 
 	return (0);
 }
