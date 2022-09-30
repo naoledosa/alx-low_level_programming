@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
 
 		printf("Product = %d\n", product);
 	}
+	else
+	{
+		printf("Should have atleast two arguments\n");
+	}
 
 	return (0);
 }
