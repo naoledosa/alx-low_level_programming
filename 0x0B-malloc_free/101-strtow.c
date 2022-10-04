@@ -15,7 +15,7 @@ int length(char *str)
 {
 	int i = 0, j = 0;
 
-	while ((*(str + i) && *(str + i)) != ' ')
+	while (*(str + i) && *(str + i) != ' ')
 	{
 		j++;
 		i++;
