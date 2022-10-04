@@ -48,8 +48,6 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		cents--;
-		}
-			
 		printf("%d\n", coins);
 
 	}
