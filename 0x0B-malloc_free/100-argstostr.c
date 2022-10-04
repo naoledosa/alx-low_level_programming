@@ -23,15 +23,11 @@ char *argstostr(int ac, char **av)
 			a++;
 			c++;
 		}
-
 		c = 0;
 		b++;
 	}
-
 	s = malloc((sizeof(char) * a) + ac + 1);
-
 	b = 0;
-
 	while (av[b])
 	{
 		while (av[b][c])
@@ -40,14 +36,11 @@ char *argstostr(int ac, char **av)
 			d++;
 			c++;
 		}
-
 		s[d] = '\n';
-
 		c = 0;
 		d++;
 		b++;
 	}
-
 	d++;
 	s[d] = '\0';
 	return (s);
