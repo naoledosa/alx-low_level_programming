@@ -19,51 +19,40 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		cents = atoi(argv[1]);
-
-		if (cents < 0)
+		coins++;
+		if ((cents - 25) >= 0)
 		{
-			printf("%d\n", 0);
-			return (0);
+			cents -= 25;
+			continue;
 		}
-		else
+				
+		if ((cents - 10) >= 0)
 		{
-			while (cents > 0)
-			{
-				coins++;
-				if ((cents - 25) >= 0)
-				{
-					cents -= 25;
-					continue;
-				}
+			cents -= 10;
+			continue;
+		}
 				
-				if ((cents - 10) >= 0)
-				{
-					cents -= 10;
-					continue;
-				}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
 				
-				if ((cents - 5) >= 0)
-				{
-					cents -= 5;
-					continue;
-				}
-				
-				if ((cents - 2) >= 0)
-				{
-					cents -= 2;
-					continue;
-				}
-				cents--;
-			}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
+		}
 			
-			printf("%d\n", coins);
+		printf("%d\n", coins);
 
-		}
 	}
 
 	return (0);
 }
-
