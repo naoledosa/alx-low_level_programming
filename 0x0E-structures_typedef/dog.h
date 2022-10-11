@@ -8,6 +8,7 @@
  * @owner: The owner of the dog.
  *
  * Description: The attributes of a dog.
+ * Return: Nothing
  */
 
 struct dog
