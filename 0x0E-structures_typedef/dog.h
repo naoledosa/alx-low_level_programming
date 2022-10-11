@@ -8,6 +8,7 @@
  * @owner: The owner of the dog.
  *
  * Description: The attributes of a dog.
+ *
  * Return: Nothing
  */
 
@@ -25,6 +26,7 @@ struct dog
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 
 #endif /* DOG_H */
