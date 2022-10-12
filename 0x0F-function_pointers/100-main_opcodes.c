@@ -10,29 +10,37 @@
 
 int main(int argc, char *argv[])
 {
-	ud_t ud_obj;
-	int val = 0, i = 0;
+	int bytes, index;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
-	if (argc == 2)
+	if (argc != 2)
 	{
-		val = atoi(argv[1]);
+		printf("Error\n");
+		exit(1);
+	}
 
-		if (val < 0)
-		{
-			printf("Error\n");
-			exit(2);
-		}
+	bytes = atoi(argv[1]);
 
-		ud_unit(&ud_obj);
-		ud_set_input_buffer(&ud_obj, argv[1], val);
-		ud_set_mode(&ud_obj, 64);
-		ud_set_syntax(&ud_obj, UD_SYN_INTEL);
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
-		while (ud_disassemble(&ud_obj))
-		{
-			printf("\t%s\n", ud_insn_hex(&ud_obj));
-		}
-        }
+	for (index = 0; index < bytes; index++)
+	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
+
+		if (index == bytes - 1)
+			continue;
+		printf(" ");
+
+		address++;
+	}
+
+	printf("\n");
 
 	return (0);
 
